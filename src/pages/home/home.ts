@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
+import { NavController, ModalController } from 'ionic-angular';
+import { ModalRootPage } from '../modal-root/modal-root'
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public mdl: ModalController) {
 
+  }
+  showModal(){
+    this.mdl.create(ModalRootPage).present();
   }
 
 }
