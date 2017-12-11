@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { SecondRootPage } from '../second-root/second-root'
+import { AboutPage } from "../about/about";
 /**
  * Generated class for the ModalTestPage page.
  *
@@ -21,7 +21,7 @@ export class ModalTestPage {
     console.log('ionViewDidLoad ModalTestPage');
   }
   push(){
-    this.navCtrl.push(SecondRootPage)
+    this.navCtrl.push(AboutPage)
   }
 
 }
